@@ -1,5 +1,5 @@
 import React from 'react';
-const Rate = ({rate,onChange})=>{
+const Rate = ({rate,onChange={}})=>{
     let newArray = []
     for(let i = 1; i < 6; i++) {
         if(i <= rate) {

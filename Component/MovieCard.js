@@ -5,7 +5,7 @@ const MovieCard = (props) => {
       <div className="Movie-Card">
   <div className="rating-movie">
   <img className="movie-image" src={props.MovieContainer.image} alt="" />
-        <div className="rating-Card"> <Rate rate={props.MovieContainer.rating}/></div> 
+        <div className="rating-Card"> <Rate rate={props.MovieContainer.rating} onChange={()=>{}}/></div> 
         <div className="info-movie">
         <div className="title">
        <h3>{props.MovieContainer.title}</h3>

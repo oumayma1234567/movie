@@ -2,8 +2,8 @@ import React,{Component} from 'react';
 import Search from './Search';
 import Movie from './Movie';
 import RatingText from './RatingText';
-import ModalExample from './AddMovie';
 import AddMovie from './AddMovie';
+import LoaderHOC from '../LoderHOC/LoderHOC';
 const movies=[
     {
         id:1,
@@ -82,9 +82,12 @@ addMovie=(newMovie={})=>{
                 <div className="add-movie">
                 <div className="new-movie">
                 <AddMovie  addMovie={this.addMovie} /></div>
-             </div></div>
              </div>
+         
+             </div>   
+             </div>
+             
          )
      }
   }
-export default MovieContainer
+export default LoaderHOC(MovieContainer)
